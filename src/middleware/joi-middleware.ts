@@ -3,10 +3,12 @@ import schemaValidator from "../helpers/schema-validator"
 import MESSAGES from '../helpers/messages'
 class JoiMiddleware {
     joiMiddleware(req, res, next) {
+        console.log("joi")
         let myRoute = req.route.path
         let myMethod = req.method.toLowerCase()
         let schema = schemaValidator(myRoute, myMethod)
         const { error } = schema.validate(req.body, { abortEarly: false });
+        console.log(error)
         if (error) {
             let myValue = error.details.map((value) => {
                 let myOk = value.message.replace(/[\,"]/g, '');

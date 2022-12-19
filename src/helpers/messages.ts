@@ -15,6 +15,8 @@ const MESSAGES = {
     INVALID_FILES:"invalid files",
     NOT_ALLOWED:"not allowed",
     CANNOT_UPDATE:"cannot update",
-    VALIDATION_ERROR:"validtation error"
+    VALIDATION_ERROR:"validtation error",
+    NOT_SENT:"mail not sent",
+    SENT_SUCCESSFULLY:"mail sent successfully"
 }
 export default MESSAGES

@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 dotenv.config()
 mongoose.set("strictQuery",false)
+
 mongoose
   .connect(process.env.DB_CRENDENTIALS)
   .then(() => {
@@ -17,7 +18,6 @@ mongoose
     console.error("Database connection error");
   });
   route(app)
+ 
 
-app.listen(process.env.port,()=>{
-  console.log("listening port 3000");
-});
+app.listen(3000)

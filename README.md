@@ -11,6 +11,7 @@
 * e) Bcrypt version-5.1.0
 * f) Dotenv version-16.0.3
 * g) Mongoose version-6.7.3
+* h) Nodemailer version-6.8.0
 ## Steps for using crud
 * step1->npm i
 * step2->npm start
@@ -69,3 +70,8 @@
 * 4. you have to fill state which is required
 * 5. you have to fill country which is required
 * 6. you have to fill zipcode which is required
+
+
+  ## USER ORGNAIZATION UPDATE : PUT API -- localhost:3000/mail
+  * Here you can send email 
+  * 1 i have used node mailer to send mail in gmail
